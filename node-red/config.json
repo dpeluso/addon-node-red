@@ -1,9 +1,9 @@
 {
-  "name": "Node-RED",
+  "name": "Node-RED-docker",
   "version": "dev",
-  "slug": "nodered",
+  "slug": "nodered-docker",
   "description": "Flow-based programming for the Internet of Things",
-  "url": "https://github.com/hassio-addons/addon-node-red",
+  "url": "https://github.com/dpeluso/dpeluso-addon-hass/node-red",
   "ingress": true,
   "ingress_port": 0,
   "panel_icon": "mdi:sitemap",
