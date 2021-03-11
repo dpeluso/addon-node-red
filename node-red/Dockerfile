@@ -1,6 +1,9 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:9.1.4
+#ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:9.1.5
 # hadolint ignore=DL3006
-FROM ${BUILD_FROM}
+#FROM ${BUILD_FROM}
+
+ARG BUILD_ARCH
+FROM homeassistant/${BUILD_ARCH}-base:latest
 
 # Copy Node-RED package.json
 COPY package.json requirements.txt /opt/
@@ -71,7 +74,7 @@ LABEL \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
-    maintainer="Franck Nijhof <frenck@addons.community>" \
+    maintainer="Daniel Peluso <Daniel.Peluso@gmail.com>" \
     org.opencontainers.image.title="${BUILD_NAME}" \
     org.opencontainers.image.description="${BUILD_DESCRIPTION}" \
     org.opencontainers.image.vendor="Home Assistant Community Add-ons" \
