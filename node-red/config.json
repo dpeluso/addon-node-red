@@ -21,7 +21,6 @@
   "homeassistant_api": true,
   "host_network": true,
   "auth_api": true,
-  "docker_api": true,
   "uart": true,
   "gpio": true,
   "privileged": ["SYS_RAWIO"],
