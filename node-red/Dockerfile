@@ -1,9 +1,6 @@
-#ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:9.1.5
+ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:9.1.5
 # hadolint ignore=DL3006
-#FROM ${BUILD_FROM}
-
-ARG BUILD_ARCH
-FROM homeassistant/${BUILD_ARCH}-base:latest
+FROM ${BUILD_FROM}
 
 # Copy Node-RED package.json
 COPY package.json requirements.txt /opt/
