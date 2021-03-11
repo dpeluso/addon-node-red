@@ -1,4 +1,4 @@
-# Home Assistant Community Add-on: Node-RED
+# Home Assistant Community Add-on: Node-RED with Docker acess
 
 [![GitHub Release][releases-shield]][releases]
 ![Project Stage][project-stage-shield]
